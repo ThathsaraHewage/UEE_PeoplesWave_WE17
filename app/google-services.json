@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "691550753119",
+    "project_id": "peopleswave-ec682",
+    "storage_bucket": "peopleswave-ec682.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691550753119:android:237217fbc81692c0cf26ea",
+        "android_client_info": {
+          "package_name": "com.example.peopleswave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691550753119-miv3ip8irrkh58o68l2c06a592vtlegl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATujAOm-ILhxvnU_6ZvFQxhMCXr17fpV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691550753119-miv3ip8irrkh58o68l2c06a592vtlegl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
