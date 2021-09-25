@@ -1,2 +1,12 @@
-# UEE_PeoplesWave_WE17
-Y3S2 - User Experience Engineering - SE3050 | 2021S2_REG_WE17 | peoples' wave mobile banking app rebuilding | for academic purpose only
+2021S2_REG_WE17
+
+User Experience Engineering - Y3S2 - SE - 2021
+
+Group Members :
+IT19148946 - I.T.Manuel
+IT19220116 - N.I.T.Hewage
+IT19009964 - Hakeem M.U.M.I.
+IT19395906 - S.A.R.Wijayabandu
+
+Mobile App :
+Peoples' Wave Mobile Banking App
