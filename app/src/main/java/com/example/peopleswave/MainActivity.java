@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         fAuth=FirebaseAuth.getInstance();
         loginbtn=findViewById(R.id.login_btn);
 
+        progressBar.setVisibility(View.GONE);
+
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Toast.makeText(MainActivity.this,"Logged in successfully! ",Toast.LENGTH_LONG).show();
                             startActivity(new Intent(getApplicationContext(),Home_activity.class));
+                            progressBar.setVisibility(View.GONE);
                         }
                         else{
                             progressBar.setVisibility(View.GONE);
@@ -76,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
+        progressBar.setVisibility(View.GONE);
     }
 
 
