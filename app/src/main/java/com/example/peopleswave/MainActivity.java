@@ -18,7 +18,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-
     private FirebaseAuth fAuth;
     Button loginbtn;
     ProgressBar progressBar;
@@ -68,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(MainActivity.this,"Logged in successfully! ",Toast.LENGTH_LONG).show();
-                            startActivity(new Intent(getApplicationContext(),Home_activity.class));
+                            startActivity(new Intent(getApplicationContext(),LoanHome.class));
                             progressBar.setVisibility(View.GONE);
                         }
                         else{
