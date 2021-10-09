@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
-                    android:text="Payment Services"
+                    android:text="Loan Services"
                     android:textAlignment="center"
                     android:textColor="#C92929"
                     android:textSize="20dp"
@@ -85,13 +85,13 @@
                     </LinearLayout>
 
                     <Button
-                        android:id="@+id/ownAccountTransferBtn"
+                        android:id="@+id/newloan"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:textAlignment="center"
                         android:textSize="18dp"
                         android:background="@drawable/selectbtn"
-                        android:text="One time bill payment"
+                        android:text="Request a new loan"
                         android:textColor="#C92929" />
 
                 </LinearLayout>
@@ -112,7 +112,7 @@
                         android:textAlignment="center"
                         android:textSize="18dp"
                         android:background="@drawable/selectbtn"
-                        android:text="Favorite bill payment"
+                        android:text="Manage Loans"
                         android:textColor="#C92929" />
 
                 </LinearLayout>
@@ -133,7 +133,7 @@
                         android:textAlignment="center"
                         android:textSize="18dp"
                         android:background="@drawable/selectbtn"
-                        android:text="Manage favorite bills"
+                        android:text="Your loan requests"
                         android:textColor="#C92929" />
 
                 </LinearLayout>
@@ -153,70 +153,10 @@
                         android:textAlignment="center"
                         android:textSize="18dp"
                         android:background="@drawable/selectbtn"
-                        android:text="bill payment history"
+                        android:text="terms and conditions"
                         android:textColor="#C92929" />
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:orientation="vertical"
-                    >
-
-                    <Button
-                        android:id="@+id/personalPayeeBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:textAlignment="center"
-                        android:textSize="18dp"
-                        android:background="@drawable/selectbtn"
-                        android:text="Manage favorite bills"
-                        android:textColor="#C92929" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:orientation="vertical"
-                    >
-
-                    <Button
-                        android:id="@+id/loanservices"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:textAlignment="center"
-                        android:textSize="18dp"
-                        android:background="@drawable/selectbtn"
-                        android:text="Loan Services"
-                        android:textColor="#C92929" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="20dp"
-                    android:layout_marginVertical="10dp"
-                    android:orientation="vertical"
-                    >
-
-                    <Button
-                        android:id="@+id/personalPayeeBtn7"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp"
-                        android:textAlignment="center"
-                        android:textSize="18dp"
-                        android:background="@drawable/selectbtn"
-                        android:text="Credit card services"
-                        android:textColor="#C92929" />
-
-                </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

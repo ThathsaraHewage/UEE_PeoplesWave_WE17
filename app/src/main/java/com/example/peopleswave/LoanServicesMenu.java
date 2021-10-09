@@ -6,25 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class LoanHome extends AppCompatActivity {
+public class LoanServicesMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_loan_home);
+        setContentView(R.layout.activity_loan_services_menu);
 
-        Button btn = findViewById(R.id.button);
-        Button btn2 = findViewById(R.id.button2);
-        Button btn3 = findViewById(R.id.button3);
+        Button btnloanservices = findViewById(R.id.newloan);
 
-
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnloanservices.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(LoanHome.this, RequestNewLoan.class);
+                Intent i = new Intent(LoanServicesMenu.this, RequestNewLoan.class);
                 startActivity(i);
             }
         });
+
+
     }
+
+
 }

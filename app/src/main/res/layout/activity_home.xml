@@ -132,7 +132,7 @@
             android:layout_marginTop="140dp"
             android:layout_marginLeft="25dp"
             android:orientation="horizontal">
-            <ImageView
+            <ImageButton
                 android:id="@+id/button3"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -140,6 +140,7 @@
                 android:layout_marginEnd="50dp"
                 android:background="@drawable/selectbtn"
                 android:text="Payment Services"
+                android:onClick="paymentServices"
                 android:textColor="#9E0000"
                 android:textSize="13sp" />
             <ImageView
