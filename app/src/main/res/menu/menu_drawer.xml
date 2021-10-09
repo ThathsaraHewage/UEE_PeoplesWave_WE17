@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_bankrates"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+            android:title="Bank Rates" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_baseline_location"
+            android:title="Location" />
+
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/ic_product"
+            android:title="Product Listings" />
+
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_contacts"
+            android:title="Contact Us" />
+    </group>
+
+    <item android:title="System">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

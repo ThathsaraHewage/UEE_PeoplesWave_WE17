@@ -69,6 +69,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="-1dp"
                 android:layout_marginRight="90dp"
+
                 android:background="#FFE6E6"
                 android:backgroundTint="#FFE6E6"
                 android:inputType="text"
@@ -278,6 +279,7 @@
                 style="?android:attr/progressBarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
             <Button
                 android:id="@+id/button5"
                 android:layout_width="300dp"
@@ -285,7 +287,8 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="40dp"
                 android:shadowColor="#090909"
-                android:text="Submit" />
+                android:text="Submit"
+                app:cornerRadius="15dp" />
 
 
 

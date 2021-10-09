@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(MainActivity.this,"Logged in successfully! ",Toast.LENGTH_LONG).show();
-                            startActivity(new Intent(getApplicationContext(),LoanHome.class));
+                            startActivity(new Intent(getApplicationContext(),Home_activity.class));
                             progressBar.setVisibility(View.GONE);
                         }
                         else{

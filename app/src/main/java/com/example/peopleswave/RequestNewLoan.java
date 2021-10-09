@@ -33,28 +33,28 @@ public class RequestNewLoan extends AppCompatActivity {
         progressBar=findViewById(R.id.progressBar2);
         submitbtn=findViewById(R.id.button5);
 
-        loanDBref = FirebaseDatabase.getInstance().getReference().child("loan");
+        progressBar.setVisibility(View.GONE);
 
         submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                rootNode = FirebaseDatabase.getInstance();
+                loanDBref = FirebaseDatabase.getInstance().getReference().child("loan");
 
+                String name = etname.getText().toString();
+                String bank = etbank.getText().toString();
+                String accountNo = etaccountNo.getText().toString();
+                String nic = etnic.getText().toString();
+                String phone = etphone.getText().toString();
+                String address = etaddress.getText().toString();
+                String amount = etamount.getText().toString();
+
+                Loan loan = new Loan(name,bank,accountNo,nic,phone,address,amount);
+
+                loanDBref.push().setValue(loan);
+                Toast.makeText(RequestNewLoan.this,"Loan Request Added !",Toast.LENGTH_SHORT).show();
+                progressBar.setVisibility(View.GONE);
             }
         });
-    }
-
-    private void InsertLoanData(){
-        String name = etname.getText().toString();
-        String bank = etbank.getText().toString();
-        String accountNo = etaccountNo.getText().toString();
-        String nic = etnic.getText().toString();
-        String phone = etphone.getText().toString();
-        String address = etaddress.getText().toString();
-        String amount = etamount.getText().toString();
-
-        Loan loan = new Loan(name,bank,accountNo,nic,phone,address,amount);
-
-        loanDBref.push().setValue(loan);
-        Toast.makeText(RequestNewLoan.this,"Loan Request Added !",Toast.LENGTH_SHORT).show();
     }
 }

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FFEEB0"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -22,6 +23,7 @@
         android:layout_height="213dp"
         android:layout_marginTop="-50dp"
         android:layout_marginBottom="-158dp"
+        android:background="#FFFFFF"
         app:srcCompat="@drawable/header" />
 
     <TextView
@@ -51,7 +53,9 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="45dp"
         android:text="Request a new loan"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="#FFE500" />
 
     <Button
         android:id="@+id/button2"
@@ -63,7 +67,8 @@
         android:layout_marginTop="310dp"
         android:layout_marginEnd="45dp"
         android:text="Manage Loans"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:cornerRadius="15dp" />
 
     <Button
         android:id="@+id/button3"
@@ -75,7 +80,8 @@
         android:layout_marginTop="420dp"
         android:layout_marginEnd="45dp"
         android:text="Your loan requests"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:cornerRadius="15dp" />
 
     <Button
         android:id="@+id/button4"
@@ -87,8 +93,8 @@
         android:layout_marginTop="530dp"
         android:layout_marginEnd="45dp"
         android:text="Terms and Conditions"
-        android:textSize="16sp" />
-
+        android:textSize="16sp"
+        app:cornerRadius="15dp" />
 
 
 </RelativeLayout>
