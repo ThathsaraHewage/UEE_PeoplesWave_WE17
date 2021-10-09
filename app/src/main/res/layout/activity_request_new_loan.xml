@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".RequestNewLoan">
 
     <LinearLayout
         android:id="@+id/linear_layout1"
@@ -241,7 +241,7 @@
                 android:layout_marginRight="90dp"
                 android:background="#FFE6E6"
                 android:backgroundTint="#FFE6E6"
-                android:inputType="number"
+                android:inputType="text"
                 android:padding="17dp"
                 android:textAlignment="center"
                 android:textColor="#373737"
@@ -275,11 +275,11 @@
                 android:textSize="8sp"
                 android:textStyle="bold" />
 
-            <ProgressBar
-                android:id="@+id/progressBar2"
-                style="?android:attr/progressBarStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressBar2"-->
+<!--                style="?android:attr/progressBarStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
 
             <Button
                 android:id="@+id/button5"
@@ -288,6 +288,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="40dp"
                 android:shadowColor="#090909"
+                android:onClick="AddLoanRequest"
                 android:text="Submit"
                 app:cornerRadius="15dp" />
 

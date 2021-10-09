@@ -9,6 +9,23 @@ public class Loan {
     String address;
     String amount;
 
+    private String Id;
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
+    }
+
+    public Loan(String id) {
+        Id = id;
+    }
+
+    public Loan(){
+
+    }
     public Loan(String name, String bank, String accountNo, String nic, String phone, String address, String amount) {
         this.name = name;
         this.bank = bank;

@@ -1,5 +1,6 @@
 package com.example.peopleswave;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,54 +8,100 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class RequestNewLoan extends AppCompatActivity {
-    EditText etname,etbank,etaccountNo,etnic,etphone,etaddress,etamount;
-    Button submitbtn;
-    ProgressBar progressBar;
+    EditText etname;
+    EditText etbank;
+    EditText etaccountNo;
+    EditText etnic;
+    EditText etphone;
+    EditText etaddress;
+    EditText etamount;
 
-    FirebaseDatabase rootNode;
-    DatabaseReference loanDBref;
+    Button submitbtn;
+//    ProgressBar progressBar;
+
+    FirebaseDatabase database;
+    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_new_loan);
 
-        etname = findViewById(R.id.name);
-        etbank =findViewById(R.id.nam);
-        etaccountNo=findViewById(R.id.name3);
-        etnic=findViewById(R.id.name4);
-        etphone=findViewById(R.id.name5);
-        etaddress=findViewById(R.id.name66);
-        etamount=findViewById(R.id.name77);
-        progressBar=findViewById(R.id.progressBar2);
+        etname = (EditText)findViewById(R.id.name);
+        etbank = (EditText)findViewById(R.id.nam);
+        etaccountNo= (EditText)findViewById(R.id.name3);
+        etnic= (EditText)findViewById(R.id.name4);
+        etphone= (EditText)findViewById(R.id.name5);
+        etaddress= (EditText)findViewById(R.id.name66);
+        etamount= (EditText)findViewById(R.id.name77);
+
+//        progressBar=findViewById(R.id.progressBar2);
         submitbtn=findViewById(R.id.button5);
 
-        progressBar.setVisibility(View.GONE);
+//        AddLoanRequest();
+    }
 
+    public void AddLoanRequest(View view){
         submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rootNode = FirebaseDatabase.getInstance();
-                loanDBref = FirebaseDatabase.getInstance().getReference().child("loan");
+                database = FirebaseDatabase.getInstance();
+                databaseReference = database.getReference().child("Loan_Request");
 
-                String name = etname.getText().toString();
-                String bank = etbank.getText().toString();
-                String accountNo = etaccountNo.getText().toString();
-                String nic = etnic.getText().toString();
-                String phone = etphone.getText().toString();
-                String address = etaddress.getText().toString();
-                String amount = etamount.getText().toString();
+                if(etaccountNo.getText().length() <= 5){
+                    Toast.makeText(RequestNewLoan.this,"Account number is invalid",Toast.LENGTH_SHORT).show();
+                }
 
-                Loan loan = new Loan(name,bank,accountNo,nic,phone,address,amount);
+                if(etphone.getText().length() == 0){
+                    Toast.makeText(RequestNewLoan.this,"Please enter phone number",Toast.LENGTH_SHORT).show();
+                }
+                else if(etphone.getText().length() < 10){
+                    Toast.makeText(RequestNewLoan.this,"Phone number is invalid",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    databaseReference = FirebaseDatabase.getInstance().getReference("loanrequest");
+                    databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            String ID = databaseReference.push().getKey();
 
-                loanDBref.push().setValue(loan);
-                Toast.makeText(RequestNewLoan.this,"Loan Request Added !",Toast.LENGTH_SHORT).show();
-                progressBar.setVisibility(View.GONE);
+                            final Loan loan = new Loan();
+
+                            loan.setId(ID);
+                            loan.setName(etname.getText().toString());
+                            loan.setBank(etbank.getText().toString());
+                            loan.setAccountNo(etaccountNo.getText().toString());
+                            loan.setNic(etnic.getText().toString());
+                            loan.setPhone(etphone.getText().toString());
+                            loan.setAddress(etaddress.toString().trim());
+                            loan.setAmount(etamount.toString());
+
+                            Toast.makeText(getApplicationContext(),"Loan request added successfully",Toast.LENGTH_SHORT).show();
+                            databaseReference.child(ID).setValue(loan);
+
+//                            clearDataAfterInsert();
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+                }
             }
         });
     }
+//    public void clearDataAfterInsert(){
+//        etname.setText("");
+//        etbank.setText("");
+//
+//    }
 }
