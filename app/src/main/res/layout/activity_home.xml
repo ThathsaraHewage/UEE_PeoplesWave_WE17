@@ -15,104 +15,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:backgroundTint="#FFEEB0"
-        tools:context=".MainActivity">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_layout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-30dp"
-            android:layout_marginLeft="25dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/button"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/selectbtn"
-                android:text="Account Summary"
-                android:textColor="#9E0000"
-                android:textSize="13sp" />
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="150dp"
-                android:background="@drawable/selectbtn"
-                android:text="Transfer Services"
-                android:textColor="#9E0000"
-                android:textSize="13sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/linear_layout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:layout_marginLeft="25dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/selectbtn"
-                android:text="Payment Services"
-                android:textColor="#9E0000"
-                android:textSize="13sp" />
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="150dp"
-                android:background="@drawable/selectbtn"
-                android:text="Cheque services"
-                android:textColor="#9E0000"
-                android:textSize="13sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/linear_layout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="330dp"
-            android:layout_marginLeft="25dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/butto5"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/selectbtn"
-                android:text="Pawning Services"
-                android:textColor="#9E0000"
-                android:textSize="13sp" />
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/selectbtn"
-                android:text="Pension Calculator"
-                android:textColor="#9E0000"
-                android:textSize="13sp" />
-        </LinearLayout>
-    </RelativeLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -144,6 +46,218 @@
             android:layout_height="match_parent" />
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFEEB0"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-42dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/selectbtn"
+                android:text="Account Summary"
+                android:textColor="#9E0000"
+                android:textSize="13sp" />
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="150dp"
+                android:background="@drawable/selectbtn"
+                android:text="Transfer Services"
+                android:textColor="#9E0000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="309dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:text="Account Summary"
+                    android:textAlignment="center"
+                    android:textColor="#C92929"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Transfer Service"
+                    android:textAlignment="center"
+                    android:textColor="#C92929"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/button3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/selectbtn"
+                android:text="Payment Services"
+                android:textColor="#9E0000"
+                android:textSize="13sp" />
+            <ImageView
+                android:id="@+id/button4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="150dp"
+                android:background="@drawable/selectbtn"
+                android:text="Cheque services"
+                android:textColor="#9E0000"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="490dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:text="Payment Services"
+                    android:textAlignment="center"
+                    android:textColor="#C92929"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Cheque Services"
+                    android:textAlignment="center"
+                    android:textColor="#C92929"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/butto5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/selectbtn"
+                android:text="Pawning Services"
+                android:textColor="#9E0000"
+                android:textSize="13sp" />
+            <ImageView
+                android:id="@+id/button6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/selectbtn"
+                android:text="Pension Calculator"
+                android:textColor="#9E0000"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="670dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:text="Pawning Services"
+                    android:textAlignment="center"
+                    android:textColor="#C92929"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Pension Calculator"
+                    android:textAlignment="center"
+                    android:textColor="#C92929"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"

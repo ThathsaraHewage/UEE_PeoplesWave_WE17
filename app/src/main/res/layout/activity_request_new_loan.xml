@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FFEEB0"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -289,8 +290,6 @@
                 android:shadowColor="#090909"
                 android:text="Submit"
                 app:cornerRadius="15dp" />
-
-
 
 
         </LinearLayout>
