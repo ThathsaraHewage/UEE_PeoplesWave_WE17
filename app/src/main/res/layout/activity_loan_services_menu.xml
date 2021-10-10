@@ -106,7 +106,7 @@
                     >
 
                     <Button
-                        android:id="@+id/personalPayeeBt"
+                        android:id="@+id/manageloansbtn"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
                         android:textAlignment="center"

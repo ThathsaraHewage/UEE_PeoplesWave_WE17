@@ -87,7 +87,7 @@ public class RequestNewLoan extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"Loan request added successfully",Toast.LENGTH_SHORT).show();
                             databaseReference.child(ID).setValue(loan);
 
-//                            clearDataAfterInsert();
+                           clearDataAfterInsert();
                         }
 
                         @Override
@@ -99,9 +99,13 @@ public class RequestNewLoan extends AppCompatActivity {
             }
         });
     }
-//    public void clearDataAfterInsert(){
-//        etname.setText("");
-//        etbank.setText("");
-//
-//    }
+    public void clearDataAfterInsert(){
+        etname.setText("");
+        etbank.setText("");
+        etamount.setText("");
+        etaddress.setText("");
+        etaccountNo.setText("");
+        etnic.setText("");
+        etphone.setText("");
+    }
 }

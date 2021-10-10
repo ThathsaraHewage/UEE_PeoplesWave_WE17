@@ -16,6 +16,7 @@ public class LoanServicesMenu extends AppCompatActivity {
         setContentView(R.layout.activity_loan_services_menu);
 
         Button btnloanservices = findViewById(R.id.newloan);
+        Button btnmanageloans = findViewById(R.id.manageloansbtn);
 
         btnloanservices.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,6 +25,15 @@ public class LoanServicesMenu extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        btnmanageloans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoanServicesMenu.this, LoanList.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }

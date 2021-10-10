@@ -75,7 +75,8 @@
                 android:background="@drawable/selectbtn"
                 android:text="Account Summary"
                 android:textColor="#9E0000"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                app:srcCompat="@drawable/accountsummary" />
             <ImageView
                 android:id="@+id/button2"
                 android:layout_width="150dp"
@@ -85,7 +86,8 @@
                 android:background="@drawable/selectbtn"
                 android:text="Transfer Services"
                 android:textColor="#9E0000"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                app:srcCompat="@drawable/transferservices"/>
         </LinearLayout>
 
         <LinearLayout
@@ -142,7 +144,9 @@
                 android:text="Payment Services"
                 android:onClick="paymentServices"
                 android:textColor="#9E0000"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                
+                />
             <ImageView
                 android:id="@+id/button4"
                 android:layout_width="150dp"
@@ -152,7 +156,8 @@
                 android:background="@drawable/selectbtn"
                 android:text="Cheque services"
                 android:textColor="#9E0000"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                app:srcCompat="@drawable/chequeservice"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -208,7 +213,8 @@
                 android:background="@drawable/selectbtn"
                 android:text="Pawning Services"
                 android:textColor="#9E0000"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                app:srcCompat="@drawable/pawningservices"/>
             <ImageView
                 android:id="@+id/button6"
                 android:layout_width="150dp"
@@ -218,7 +224,8 @@
                 android:background="@drawable/selectbtn"
                 android:text="Pension Calculator"
                 android:textColor="#9E0000"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                app:srcCompat="@drawable/pesioncalculator"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

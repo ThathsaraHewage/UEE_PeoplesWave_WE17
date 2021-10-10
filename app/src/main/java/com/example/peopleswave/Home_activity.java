@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Home_activity extends AppCompatActivity {
         private DrawerLayout drawer;
@@ -49,6 +50,7 @@ public class Home_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Home_activity.this, PaymentServices.class);
+                Toast.makeText(getApplicationContext(),"Directing to Payment Services..",Toast.LENGTH_SHORT).show();
                 startActivity(i);
             }
         });

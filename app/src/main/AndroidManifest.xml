@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Peopleswave">
-        <activity android:name=".LoanServicesMenu"></activity>
+        <activity android:name=".LoanList"></activity>
+        <activity android:name=".LoanServicesMenu" />
         <activity android:name=".PaymentServices" />
         <activity android:name=".RequestNewLoan" />
-        <activity android:name=".Home_activity" />
+        <activity
+            android:name=".Home_activity"
+            android:hardwareAccelerated="false" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
